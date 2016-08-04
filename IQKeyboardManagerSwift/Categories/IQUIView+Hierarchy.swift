@@ -233,12 +233,9 @@ public extension UIView {
     */
     public func isSearchBarTextField()-> Bool {
         
-        struct InternalClass {
-            
-            static var UISearchBarTextFieldClass: AnyClass?        =   NSClassFromString("UISearchBarTextField") //UISearchBar
-        }
 
-        return  (InternalClass.UISearchBarTextFieldClass != nil && isKindOfClass(InternalClass.UISearchBarTextFieldClass!)) || self is UISearchBar
+
+        return  false
     }
     
     /**
